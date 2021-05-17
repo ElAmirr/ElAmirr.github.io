@@ -6,4 +6,4 @@ this's a portfolio website made with github pages and custom domain name.
 | ------------- | ----------------- |
 | elothmani.ovh | ElAMirr.github.io |
 
-Click [here](https://www.elothmani.ovh/) to go to my Quora profile.
+Click [here](https://www.elothmani.ovh/) to go to my portfolio website.
