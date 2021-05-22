@@ -9,10 +9,13 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-  background-color: black;
   height: 100%;
-  color: white;
+  color: #777;
   line-height: 1.8;
+}
+.dark-mode  {
+  background-color: black;
+  color: white;
 }
 
 /* Create a Parallax Effect */
@@ -47,7 +50,7 @@ body, html {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-height: 400px;
   }
 }
@@ -64,6 +67,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="nightFunction()"><i class="fa fa-moon-o" aria-hidden="true"></i>Night EYE</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -256,6 +260,12 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+// Used to add night mode 
+function nightFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
 </script>
 
