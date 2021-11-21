@@ -204,7 +204,9 @@ body, html {
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: elothmanielamir@gmial.com<br>
       </div>
       <p><i class="fa fa-address-card"></i> Leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <form action="https://formsubmit.co/othmaniamir41@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="elothmani.ovh/thanks.html">
+        <input type="hidden" name="_subject" value="New submission!">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -235,43 +237,6 @@ body, html {
   </div>
   <p>Powered by <a href="//" target="_blank" class="w3-hover-text-green">ELOTek</a></p>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Used to add night mode 
-function nightFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-</script>
-
+<script src="index.js"></script>
 </body>
 </html>
