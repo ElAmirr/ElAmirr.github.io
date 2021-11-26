@@ -1,0 +1,94 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.dark-mode  {
+  background-color: black;
+  color: white;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../img/home.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url('../img/mywork.jpg');
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("../img/contact.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-col {padding: 8px;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    min-height: 400px;
+  }
+}
+
+.progress {
+  background: #f1f1f1;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 900px;
+}
+
+.progress-value {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background: #616161;
+  height: 40px;
+  width: 0;
+}
+
+#prgress-value-one {
+  animation: load1 3s normal forwards;
+}
+
+#prgress-value-two {
+  animation: load2 3s normal forwards;
+}
+#prgress-value-three {
+  animation: load3 3s normal forwards;
+}
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width:85%; }
+}
+
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
