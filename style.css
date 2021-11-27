@@ -51,10 +51,10 @@ body, html {
 
 .progress {
   background: #f1f1f1;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  display: flex;
   height: 40px;
   width: 900px;
 }
@@ -63,13 +63,14 @@ body, html {
   color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #616161;
   height: 40px;
   width: 0;
 }
 
 #prgress-value-one {
-  animation: load1 3s normal forwards;
+  animation: load1 3s normal forwards;  /*animation-name animation animation-duration animation-direction*/
 }
 
 #prgress-value-two {
