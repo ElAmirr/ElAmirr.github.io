@@ -1,8 +1,18 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+
 body, html {
-  height: 100%;
+  height: 100vh;
   color: #777;
   line-height: 1.8;
+  overflow-x: hidden;
 }
 .dark-mode  {
   background-color: black;
@@ -23,6 +33,7 @@ body, html {
 .bgimg-1 {
   background-image: url('../img/home.jpg');
   min-height: 100%;
+  margin-top: -6vh;
 }
 
 /* Second image (Portfolio) */
@@ -37,10 +48,6 @@ body, html {
   min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-.w3-col {padding: 8px;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -49,14 +56,51 @@ body, html {
   }
 }
 
+.drop-down-navbar {
+  display: none;
+}
+
+.navbar {
+  height: 6vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+}
+
+.nav-line {
+  display: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #777;
+  margin-left: 20px;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section {
+  background-color: black;
+  letter-spacing: 1rem;
+}
+
 .progress {
   background: #f1f1f1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  height: 40px;
-  width: 900px;
+  height: 6vh;
+  width: 80vw;
 }
 
 .progress-value {
@@ -92,4 +136,284 @@ body, html {
 @keyframes load3 {
   0% { width: 0; }
   100% { width: 70%; }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container h3 {
+  font-size: 1.5rem;
+  margin-top: 6vh;
+}
+
+.about-me-detail {
+  height: 60vh;
+  width: 60VW;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love-comment {
+  margin-top: 2vh;
+}
+
+.about-description {
+  width: 50vw;
+  margin-top: 3vh;
+}
+
+.study-field {
+  width: 35vw;
+  margin-left: 2vw;
+}
+
+.about-me-detail img {
+  height: 200px;
+  width: 150px;
+}
+
+.container-statistic {
+  height: 20vh;
+  width: 100vw;
+  margin-top: 10vh;
+  background-color: #616161;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.statistic {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-work-container {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-link-container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.project-link img{
+  width: 150px ;
+  height: 150px;
+}
+
+.map-img {
+  height: 35vh;
+  width: 22vw;
+  border-radius: 4px;
+}
+
+.welcome-section {
+  font-size: 1.5rem;
+}
+
+.contact-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  height: 6vh;
+  width: 40vw;
+  outline: none;
+  padding-left: 10px;
+}
+
+.contact {
+  width: 100vw;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.contact-data {
+  height: 40vh;
+}
+
+.send-btn {
+  background-color: black;
+  color: #fff;
+  height: 8vh;
+  width: 15vw;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.address-contact {
+  height: 30vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+
+footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.to-top-btn {
+  height: 6vh;
+  width: 10vw;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .hidden-element {
+    display: none;
+  }
+  
+  .nav-line {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-section-part {
+    display: none;
+  }
+
+  .about-description {
+    width: 80vw;
+  }
+
+  .about-me-detail {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .study-field {
+    width: 80vw;
+  }
+
+  .statistic {
+    font-size: 0.8rem;
+  }
+  
+  .title-section {
+    letter-spacing: 0.5rem;
+  }
+
+  .my-work-container {
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-work-paragraph {
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .contact {
+    width: 100vw;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container {
+    height: 130vh;
+  }
+
+  .contact-data {
+    height: 50vh;
+  }
+
+  .map-img {
+    height: 35vh;
+    width: 80vw;
+    border-radius: 4px;
+  }
+
+  .welcome-section {
+    font-size: 1.2rem;
+  }
+
+  .address-contact {
+    height: 35vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-field {
+    width: 80vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .send-btn {
+    width: 70vw;
+  }
+
+  .to-top-btn {
+    width: 35vw;
+  }
 }
