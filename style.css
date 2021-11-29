@@ -343,7 +343,7 @@ footer a {
   }
 
   .my-work-container {
-    height: 160vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
