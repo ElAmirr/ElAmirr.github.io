@@ -19,6 +19,10 @@ body, html {
   color: white;
 }
 
+.overlay {
+  display: none;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
