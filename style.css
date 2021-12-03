@@ -421,6 +421,7 @@ footer a {
     width: 35vw;
   }
   .overlay {
+    display: block;
     height: 100vh;
     width: 0;
     position: fixed;
@@ -445,13 +446,13 @@ footer a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #941c1c;
+    color: #777;
     display: block;
     transition: 0.3s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #ad2121;
+    color: #fff;
   }
   
   .overlay .closebtn {
