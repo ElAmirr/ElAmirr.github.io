@@ -1,7 +1,7 @@
 <h1 align="center"></h1>
 <p align="center">
-  <img src="https://github.com/ElAmirr/Reciep_App/blob/main/screenshots/logo.png"
-       alt="Delicious logo"
+  <img src="https://github.com/ElAmirr/ElAmirr.github.io/blob/main/logo.png"
+       alt="logo"
        width="500"
   >
 </p>
