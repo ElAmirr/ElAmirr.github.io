@@ -18,8 +18,8 @@ As a webDevelopper having a portfolio website is a necissery thing it's like a s
 
 ## Screen Rcord :camera:
 
-![Alt Text](https://imgur.com/a/IE0H1Gl)
-<img src="https://imgur.com/a/IE0H1Gl" width="40" height="40" />
+![Alt Text](video.gif)
+<img src="video.gif" width="40" height="40" />
 
 ## Author :black_nib:
 
