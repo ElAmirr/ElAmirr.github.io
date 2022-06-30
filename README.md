@@ -16,9 +16,11 @@ npm start
 
 As a webDevelopper having a portfolio website is a necissery thing it's like a showroome for your skills so i decide to create my firs portfolio using HTML, CSS and vanilla JavaScript. I hope you enjoy visiting my world and dont forget to send me a message in the contact section, i w'll replay you ASAP ;)
 
-## Screen Rcord :video:
+## Screen Rcord :camera:
 
-![](https://github.com/ElAmirr/ElAmirr.github.io/blob/main/video.gif)
+![Alt Text](https://github.com/ElAmirr/ElAmirr.github.io/blob/main/video.gif)
+
+<img src="https://github.com/ElAmirr/ElAmirr.github.io/blob/main/video.gif" width="40" height="40" />
 
 ## Author :black_nib:
 
